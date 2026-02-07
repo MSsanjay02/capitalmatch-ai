@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CapitalMatch AI</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Premium fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">⚡ CapitalMatch AI</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>
+        Discover Perfect <span>Investors</span><br>
+        For Your Startup
+    </h1>
+    <p>AI-powered investor discovery platform for modern founders</p>
+</section>
+
+<!-- SEARCH CARD -->
+<section class="search-section">
+    <div class="search-card">
+
+        <h2>Search Global Investors</h2>
+
+        <div class="input-group">
+            <input type="text" id="sector" placeholder="Enter Sector (Fintech, AI, SaaS)">
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="country" placeholder="Enter Country (India, USA, UK)">
+        </div>
+
+        <button id="searchBtn">
+            <span>Search Investors</span>
+        </button>
+
+        <div class="examples">
+            <p>Try examples:</p>
+            <span onclick="fillExample('Fintech','India')">Fintech India</span>
+            <span onclick="fillExample('AI','USA')">AI USA</span>
+            <span onclick="fillExample('SaaS','UK')">SaaS UK</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- LOADER -->
+<div id="loader" class="loader hidden">
+    <div class="spinner"></div>
+    <p>AI is scanning global investors...</p>
+</div>
+
+<!-- RESULTS -->
+<section class="results-section">
+    <div id="results"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Built with AI ✦ by Sanjay</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
